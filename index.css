@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --black: #2B2B2B;
+  --white: #fbfbfb;
+  --blue: #0274BA;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: "DM Sans", serif;
+  color: var(--black);
+}
+
+body{
+  background-color: var(--white);
+}
+
+/* NAV */
+.nav-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-container nav{
+  width: 60%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-container nav a{
+  font-family: "Fira Sans", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 5rem;
+}
+
+.nav-container nav a:first-child{
+  margin: 0;
+}
+
+.nav-container nav a:visited, .nav-container nav a:link {
+  text-decoration: none;
+  color: var(--black);
+} 
+
+.nav-container nav a:hover{
+  color: var(--blue);
+  transition: 0.2s;
+}
+
+/* JUMBOTRON */
+.content{
+  width: 60%;
+  display: flex;
+  /* justify-content: center; */
+  margin: 0 auto;
+}
+
+.jumbotron {
+  max-height: 360px;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+/* CONTENT */
+h1{
+  font-size: 2.4rem;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+#name{
+  color: var(--blue);
+}
+
+.profile{
+  width: 250px;
+  height: 250px;
+  background-color: #0274BA;
+}
