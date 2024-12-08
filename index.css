@@ -34,7 +34,7 @@ body{
   justify-content: end;
 }
 
-.nav-container nav a{
+nav a{
   font-family: "Fira Sans", serif;
   font-weight: 800;
   font-style: normal;
@@ -47,12 +47,12 @@ body{
   margin: 0;
 }
 
-.nav-container nav a:visited, .nav-container nav a:link {
+a:visited, a:link {
   text-decoration: none;
   color: var(--black);
 } 
 
-.nav-container nav a:hover{
+a:hover{
   color: var(--blue);
   transition: 0.2s;
 }
@@ -84,8 +84,35 @@ p{
   color: var(--blue);
 }
 
+.about{
+  grid-area: about;
+}
+
+.about h1{
+  margin-bottom: 3rem;
+}
+
 .profile{
-  width: 250px;
-  height: 250px;
-  background-color: #0274BA;
+  max-width: 250px;
+  grid-area: profile;
+}
+
+.profile img{
+  width: 100%;
+  grid-area: profile;
+  border-radius: 100%;
+}
+
+#content-gallery{
+  margin: 0;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "about about profile";
+  column-gap: 22rem;
 }
