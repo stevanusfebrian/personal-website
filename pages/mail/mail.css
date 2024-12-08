@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+  --black: #2B2B2B;
+  --white: #fbfbfb;
+  --blue: #0274BA;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: "DM Sans", serif;
+  color: var(--black);
+  font-weight: 400;
+}
+
+body{
+  background-color: var(--white);
+}
+
+/* NAV */
+.nav-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 8px solid var(--blue);
+}
+
+.nav-container nav{
+  width: 60%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+nav a{
+  font-family: "Fira Sans", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 5rem;
+}
+
+.nav-container nav a:first-child{
+  margin: 0;
+}
+
+a:visited, a:link {
+  text-decoration: none;
+  color: var(--black);
+} 
+
+a:hover{
+  color: var(--blue);
+  transition: 0.2s;
+}
+
+/* CARD */
+.content{
+  display: grid;
+  margin: 0 auto;
+  width: 60%;
+  grid-template-areas: "sidecard-container input-area";
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  margin-top: 10rem;
+  border-radius: 1.5rem;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+}
+
+.sidecard-container{
+  display: flex;
+  position: relative;
+}
+
+.sidecard-container h1{
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: var(--white);
+  position: absolute;
+  top: 5rem;
+  left: 5.5rem;
+}
+
+.sidecard{
+  height: 100%;
+  width: 100%;
+  grid-area: sidecard;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.input-area{
+  position: relative;
+  grid-area: input-area;
+  padding: 6rem 4rem;
+  background-color: #fffffc;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+label{
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: block;
+}
+
+.message{
+  margin-top: 1.8rem;
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  font-family: "DM Sans", serif;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  border: 2px solid var(--black);
+  background-color: #fffffc;
+  font-weight: 400;
+  margin-top: 0.6rem;
+}
+
+input:focus, textarea:focus{
+  outline: none !important;
+  border: 2px solid var(--blue);
+  transition: 0.15s;
+}
+
+button{
+  margin-top: 4rem;
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  font-family: "DM Sans", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 2px solid var(--black);
+  background-color: #fffffc;
+}
+
+button:active, button:focus, button:hover{
+  outline: none !important;
+  background-color: var(--blue);
+  color: #fffffc;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 2px solid var(--blue);
+  transition: 0.2s;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 30rem;
+  min-height: 3rem;
+}

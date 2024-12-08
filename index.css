@@ -24,6 +24,7 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
+  border-bottom: 8px solid var(--blue);
 }
 
 .nav-container nav{
